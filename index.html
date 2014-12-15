@@ -4,9 +4,61 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+    <h2>
+        Contrast Analyzer Tools
+    </h2>
 
-  <ul class="post-list">
+    <p>
+        <img src="/img/web-aim.png">
+
+        The <a href="http://webaim.org/resources/contrastchecker/"><b>WebAim Contrast Checker</b></a>
+        not only compares the foreground and background colors but also demonstrates them in use
+        with both normal and large text.<br><br>
+
+        Unfortunately it doesn't explain the contrast ratio result immediately, but instead explains how to interpret it.
+    </p>
+
+    <a href="http://webaim.org/resources/contrastchecker/" class="go">Use the WebAim Contrast Checker</a><br><br><br>
+
+    <p>
+        <img src="/img/check-my-colors.png">
+
+        <a href="http://www.checkmycolours.com/">Check My Colors</a> takes a more automatic approach to checking color contrast for accessibility: it renders your page and
+        analyzes all foreground/background color combinations on it.
+        <br><br>
+        In the report table it not only tells you the contrast ratio and where the
+        text was found but also shows some sample text with the background from your website.
+        This doesn't only demonstrate the problem but also let's you see what the
+        problematic page elements are without having to check the HTML.
+    </p>
+
+    <a href="http://www.checkmycolours.com/" class="go">Use Check My Colors</a><br><br><br>
+
+    <h2>
+        Why use a contrast analyzer?
+    </h2>
+
+    <p>
+        Ensuring sufficient contrast between foreground and
+        background colors isn't only essential to make your website
+        accessible, it also makes your pages easier to use for all
+        visitors.
+    </p>
+
+    <p>
+        Color checkers will tell you if someone with color deficits
+        can still easily use your site.
+    </p>
+
+    <p>
+        Automatic tools can use the <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef">WCAG contrast ratio</a>
+        and then evaluate it based on the accessibility guidelines.
+    </p>
+
+
+
+
+    <!-- <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -16,8 +68,10 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-  </ul>
+    </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    -->
 
 </div>
